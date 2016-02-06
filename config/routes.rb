@@ -10,4 +10,10 @@ Rails.application.routes.draw do
    end
   end
 
+  get '/' => 'links#index'
+  get '/links' => 'links#index'
+  get '/links/new' => 'links#new'
+  post '/links' => 'links#create'
+
+
 end
